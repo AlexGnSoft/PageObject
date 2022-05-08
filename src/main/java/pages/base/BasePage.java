@@ -18,7 +18,7 @@ public class BasePage {
         driver.get(url);
 
         if(!driver.getTitle().equals("REALT.BY: Недвижимость, коммерческая недвижимость в Минске и Беларуси")){
-            throw new IllegalStateException("You're not at realt.by website. The current page is " + driver.getCurrentUrl())
+            throw new IllegalStateException("You're not at realt.by website. The current page is " + driver.getCurrentUrl());
         }
     }
 
